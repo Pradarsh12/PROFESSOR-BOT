@@ -338,7 +338,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer('please Unblock @{temp.U_NAME} this bot !', show_alert=True)
             except PeerIdInvalid:
                 await query.answer("please start this @{temp.U_NAME} bot and back to click this button", show_alert=True)
-            except Exception as e: # വളഞ്ഞ വഴി ചെയ്യാൻ മടിയായത് കൊണ്ട് ഇതിൽ ഒതുക്കി 🙏😁
+            except Exception as e: # Being too lazy to do the curved route, it was confined to this 🙏😁
                 await query.answer("please start this @{temp.U_NAME} bot and back to click thia button", show_alert=True)
       
     elif query.data.startswith("fullfile"):
